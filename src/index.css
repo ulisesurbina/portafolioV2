@@ -2,7 +2,6 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  color: #1B226F;
   font-family: "Parkinsans", sans-serif;
 }
 a,
@@ -17,6 +16,29 @@ h1, h2, h3, h4, h5, h6, p, span, strong, ul, li {
 body {
   font-size: 20px;
   background: rgb(179 197 179);
+  color: #1B226F;
+  transition: background-color 0.3s, color 0.3s;
+  -webkit-transition: background-color 0.3s, color 0.3s;
+  -moz-transition: background-color 0.3s, color 0.3s;
+  -ms-transition: background-color 0.3s, color 0.3s;
+  -o-transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background: rgb(27, 26, 26) 80%;
+  color: #D1C9C9;;
+}
+body.dark-mode .ContainerBanner__info__data span a {
+  color: #D1C9C9;;
+}
+body.dark-mode .Flip-card-front, .Flip-card-back {
+  box-shadow: 0 8px 14px 0 rgb(223 201 201);
+}
+body.dark-mode .line {
+  background: repeating-linear-gradient(to top, #D1C9C9, #D1C9C9 5px, transparent 5px, transparent 10px);
+}
+body.dark-mode .circle {
+  border: 2px dashed #D1C9C9;
 }
 
 .switch {
@@ -153,6 +175,8 @@ input:checked + .slider:before {
 }
 .NavbarText li a {
   color: #e6dddd;
+  font-size: clamp(1rem, 0.8vw + 1.2rem, 1vw);
+  line-height: 2vw;
 }
 .BodyWeb {
   margin-top: 10vh;
@@ -391,7 +415,7 @@ input:checked + .slider:before {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  width: 60%;
+  width: 50%;
 }
 .InfoDetalleUser__section h2,
 .InfoDetalleUser__section h3,
@@ -425,7 +449,7 @@ input:checked + .slider:before {
   justify-content: center;
 }
 .InfoDetalleUser__section__skills {
-  width: 40%;
+  width: 50%;
   margin: 0 2rem;
   display: flex;
   flex-direction: column;
@@ -446,6 +470,8 @@ input:checked + .slider:before {
 .InfoDetalleUser__section__skills__grid span a,
 .InfoDetalleUser__section__skills__grid span p {
   color: #D1C9C9;
+  font-size: clamp(1rem, 0.8vw + 1.2rem, 1vw);
+  line-height: 2vw;
 }
 .InfoDetalleUser__section__skills__grid span img {
   width: 10%;
@@ -464,6 +490,8 @@ input:checked + .slider:before {
 }
 .InfoDetalleUser__section__skills__experience p {
   text-align: justify;
+  font-size: clamp(1rem, 0.8vw + 1.2rem, 1vw);
+  line-height: 1.5vw;
 }
 .InfoDetalleUser__section__skills__test {
   background: #aca4a4;
@@ -500,44 +528,40 @@ input:checked + .slider:before {
 
 .SectionSkills {
   position: relative;
-  overflow: hidden;
-  width: 100%;
+  width: 90%;
   margin: 5% auto;
 }
+.SectionSkills h2 {
+  font-size: clamp(2rem, 3vw + 2.3rem, 3.3vw);
+  line-height: 4vw;
+  font-weight: 600;
+  text-align: center;
+}
 .ContainerSwiper {
-  position: relative;
-  z-index: 3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17%, 1fr));
+  gap: 1rem;
   padding: 3rem 0;
-  animation: loop 12s linear infinite;
-  -webkit-animation: loop 12s linear infinite;
+  align-items: center;
 }
 .ItemSlide {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  text-align: center;
-  color: #aca4a4;
-  height: 10vh;
-  width: 35vw;
+  margin: 0 auto;
+  width: 70%;
+  height: 20vh;
   border-radius: 1vw;
   -webkit-border-radius: 1vw;
   -moz-border-radius: 1vw;
   -ms-border-radius: 1vw;
   -o-border-radius: 1vw;
-  width: 10%;
-  height: 20vh;
-  perspective: 1000px;
 }
 /* . {
-  position: absolute;
   background: linear-gradient(90deg, rgb(179 197 179), transparent 10%, transparent 90%, rgb(179 197 179));
-  inset: 0;
+  animation: loop 12s linear infinite;
+  -webkit-animation: loop 12s linear infinite;
 } */
-@keyframes loop {
+/* @keyframes loop {
   0% {
     transform: translateX(0%);
     -webkit-transform: translateX(0%);
@@ -546,25 +570,25 @@ input:checked + .slider:before {
     -o-transform: translateX(0%);
   }
   100% {
-    transform: translateX(-70%);
-    -webkit-transform: translateX(-70%);
-    -moz-transform: translateX(-70%);
-    -ms-transform: translateX(-70%);
-    -o-transform: translateX(-70%);
-  }
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
 }
+} */
 
 .Flip-card-back p {
   font-size: clamp(1rem, 1vw + 1.2rem, 1.2vw);
-  line-height: 1vw;
+  line-height: 1.5vw;
   font-weight: 600;
   text-align: center;
-  color: #e3d5d5;
+  color: #1B226F;
 }
 .Flip-card-inner {
   position: relative;
-  width: 20vw;
-  height: 100%;
+  width: 100%;
+  height: 12vw;
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
@@ -588,17 +612,16 @@ input:checked + .slider:before {
   backface-visibility: hidden;
   border-radius: 1rem;
 }
-.Flip-card-front {
+/* .Flip-card-front {
   background: linear-gradient(120deg, #6db4bb 60%, rgb(138 221 207) 88%, rgb(78 189 184) 40%, rgb(131 243 229 / 60%) 48%);
-  color: #4ba7cb;
-}
+} */
 .Flip-card-front svg{
   width: 80%;
   margin: 0 auto;
   font-size: 6vw;
 }
 .Flip-card-back {
-  background: linear-gradient(120deg, rgb(59 119 53) 30%, #81a581 88%, #7bc37a 40%, rgb(129 169 127) 78%);
+  background: linear-gradient(120deg, #01C38E 30%, #17b389 88%, #1da37e 40%, #1db58c 78%);
   transform: rotateY(180deg);
 }
 
@@ -619,7 +642,7 @@ input:checked + .slider:before {
   grid-template-columns: repeat(3, 1fr);
   width: 78%;
   font-size: clamp(1rem, 1vw + 1.5rem, 1vw);
-  line-height: 1.5vw;
+  line-height: 2vw;
   text-align: center;
 }
 .Container__experiencia__grid__info {
@@ -631,7 +654,7 @@ input:checked + .slider:before {
 .Container__experiencia__grid__info h3 {
   font-weight: 500;
   font-size: clamp(2rem, 1.3vw + 2.3rem, 1.5vw);
-  line-height: 2vw;
+  line-height: 3.3vw;
 }
 
 .timeline {
@@ -661,7 +684,7 @@ input:checked + .slider:before {
 .line {
   width: 2px;
   height: 10vh;
-  background: repeating-linear-gradient(to bottom, #000000, #000000 5px, transparent 5px, transparent 10px);
+  background: repeating-linear-gradient(to top, #000000, #000000 5px, transparent 5px, transparent 10px);
   animation: dash-animation 0.5s linear infinite;
   -webkit-animation: dash-animation 0.5s linear infinite;
 }
@@ -671,12 +694,15 @@ input:checked + .slider:before {
     background-position: 0 0;
   }
   to {
-    background-position: 0 10px;
+    background-position: 0 -10px;
   }
 }
 
+.ContainerOpen {
+  width: 100%;
+}
 .ContainerOpen h2 {
-  font-size: clamp(2rem, 3vw + 2.3rem, 3.3vw);
+  font-size: clamp(2rem, 2vw + 2.3rem, 2.3vw);
   line-height: 4vw;
   font-weight: 600;
   text-align: center;
@@ -699,4 +725,11 @@ input:checked + .slider:before {
 } 
 .mySwiperOpen img {
   width: 60%;
+  object-fit: cover;
+  height: 35vh;
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
 }

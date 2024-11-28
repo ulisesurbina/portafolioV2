@@ -48,7 +48,7 @@ const FollowMouse = () => {
 function ElementEffect () {
     // const [mounted, setMounted] = useState(true)
   return (
-        <div style={{widt: "100%", background: "rgb(147 184 193)", height: "50vh", display: "flex", alignItems: "center", margin: "5% 0"}}>
+        <div style={{width: "100%", background: "rgb(147 184 193)", height: "50vh", display: "flex", alignItems: "center", margin: "5% 0"}}>
             <FollowMouse />
             {/* { mounted && <FollowMouse />}
             <button onClick={() => setMounted(!mounted)}>{mounted ? "Desmontar" : "Montar"} Toggle mounted</button> */}

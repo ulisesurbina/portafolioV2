@@ -5,6 +5,16 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { EffectCoverflow, Pagination, Autoplay, Navigation } from 'swiper/modules';
+import open0 from "./images/open0.webp"
+import open1 from "./images/open1.webp"
+import open2 from "./images/open2.webp"
+import open3 from "./images/open3.webp"
+import open4 from "./images/open4.webp"
+import open5 from "./images/open5.webp"
+import open6 from "./images/open6.webp"
+import open7 from "./images/open7.webp"
+import open8 from "./images/open8.webp"
+
 
 function Openfinance() {
 
@@ -37,34 +47,34 @@ function Openfinance() {
         pagination={{
             clickable: true,
         }}
-        modules={[Navigation, EffectCoverflow, Pagination]}
+        modules={[Autoplay, Navigation, EffectCoverflow, Pagination]}
         className="mySwiperOpen">
             <SwiperSlide>
-            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+            <img src={open0} />
             </SwiperSlide>
             <SwiperSlide>
-            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+            <img src={open1} />
             </SwiperSlide>
             <SwiperSlide>
-            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+            <img src={open2} />
             </SwiperSlide>
             <SwiperSlide>
-            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+            <img src={open3} />
             </SwiperSlide>
             <SwiperSlide>
-            <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+            <img src={open4} />
             </SwiperSlide>
             <SwiperSlide>
-            <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+            <img src={open5} />
             </SwiperSlide>
             <SwiperSlide>
-            <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+            <img src={open6} />
             </SwiperSlide>
             <SwiperSlide>
-            <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+            <img src={open7} />
             </SwiperSlide>
             <SwiperSlide>
-            <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+            <img src={open8} />
             </SwiperSlide>
         </Swiper>
         </section>
