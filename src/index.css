@@ -549,7 +549,7 @@ input:checked + .slider:before {
   align-items: center;
   margin: 0 auto;
   width: 70%;
-  height: 20vh;
+  height: 30vh;
   border-radius: 1vw;
   -webkit-border-radius: 1vw;
   -moz-border-radius: 1vw;
