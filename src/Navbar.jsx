@@ -23,12 +23,12 @@ function Navbar() {
             <li><a href="#section5">Proyectos</a></li>
             <li><a href="#section6">Contacto</a></li>
             <li>
-              <label class="switch">
+              <label className="switch">
                 <input 
                 checked={darkMode}
                 onChange={() => setDarkMode(!darkMode)} 
                 type="checkbox" />
-                <span class="slider"></span>
+                <span className="slider"></span>
               </label>
             </li>
         </ul>
