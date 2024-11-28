@@ -1,0 +1,66 @@
+.containerGame {
+  width: 50%;
+  margin: 5% auto;
+  position: relative;
+  text-align: center;
+}
+.containerGame h2 {
+  font-size: clamp(2rem, 3vw + 2.3rem, 3.3vw);
+  line-height: 4vw;
+  font-weight: 600;
+  text-align: center;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 10vw);
+  gap: 2rem;
+  justify-items: center;
+  justify-content: center;
+}
+.cuadrado {
+  border: 2px solid #FFFF;
+  padding: 2rem;
+  text-align: center;
+  align-content: center;
+  width: 4vw;
+  height: 4vw;
+  font-size: 2vw;
+}
+.PlayersSelected {
+  display: flex;
+  justify-content: center;
+  margin: 4% 0;
+  font-size: 3vw;
+}
+.cuadrado.isSelected {
+  color: #FFFF;
+  background: rgb(119, 187, 9);
+}
+.modalWinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%, -50%);
+  -webkit-transform:translate(-50%, -50%);
+  -moz-transform:translate(-50%, -50%);
+  -ms-transform:translate(-50%, -50%);
+  -o-transform:translate(-50%, -50%);
+  background: rgb(142, 193, 59);
+  z-index: 2;
+  padding: 5rem;
+  border: 3px solid #FFFF;
+}
+.modalWinner__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.containerGame button {
+  font-size: clamp(1.2rem, 1.2vw + 1.4rem, 1.4vw);
+  padding: 1rem;
+  border-radius: 2vw;
+  border: none;
+  margin: 2% 0;
+}
