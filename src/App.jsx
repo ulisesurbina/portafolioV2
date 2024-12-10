@@ -1,41 +1,25 @@
-import './TikTak.css'
-import { CardSkill } from './CardSkill.jsx'
-
-const skills = [
-  {
-    id: "1",
-    isLearning: true,
-    nameSkill: "JavaScript",
-    nameImage: "JavaScript"
-  },
-  {
-    id: "2",
-    isLearning: true,
-    nameSkill: "HTML",
-    nameImage: "HTML5"
-  },
-  {
-    id: "3",
-    isLearning: false,
-    nameSkill: "CSS",
-    nameImage: "CSS"
-  }
-]
+import React, { useState, useEffect } from 'react';
+import Navbar from './Navbar.jsx';
+import Body from './Body.jsx';
+import './index.css';
 
 function App() {
-  // const javaTest = { isLearning: true, nameSkill: "JavaScript", nameImage: "JavaScript"}
+  const [darkMode, setDarkMode] = useState(() => {
+    const savedMode = localStorage.getItem('darkMode') === 'true';
+    return savedMode;
+  });
+
+  useEffect(() => {
+    document.body.classList.toggle('dark-mode', darkMode);
+    localStorage.setItem('darkMode', darkMode);
+  }, [darkMode]);
+
   return (
     <div>
-      {
-      skills.map(skill => {
-        const { isLearning, nameSkill, nameImage, id } = skill
-        return (
-          <CardSkill key={id} initialIsLearning={isLearning} nameSkill={nameSkill} nameImage={nameImage} />
-        )
-      })
-    }
+      <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+      <Body darkMode={darkMode} />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

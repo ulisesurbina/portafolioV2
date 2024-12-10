@@ -1,21 +1,11 @@
 import "./index.css";
 import logoNavGreen from './images/logoGreen.svg';
-import React, { useState, useEffect } from "react";
-import Body from "./Body.jsx";
+import logoNavWhite from './images/logoWhite.svg';
 
-
-function Navbar() {
-  const [darkMode, setDarkMode] = useState(() => {
-    const savedMode = localStorage.getItem("darkMode");
-    return savedMode === "true";
-  });
-  useEffect(() => {
-      document.body.classList.toggle("dark-mode", darkMode);
-      localStorage.setItem("darkMode", darkMode);
-  }, [darkMode]);
+function Navbar({ darkMode, setDarkMode }) {
     return (
       <div className="NavbarWeb">
-        <img src={logoNavGreen} alt="logo navbar" />
+        <img src={darkMode ? logoNavWhite : logoNavGreen} alt="logo navbar" />
         <ul className="NavbarText">
             <li><a href="#section1">Sobre mi</a></li>
             <li><a href="#section3">Skills</a></li>
