@@ -11,7 +11,7 @@ function Navbar({ darkMode, setDarkMode }) {
             <li><a href="#section3">Skills</a></li>
             <li><a href="#section4">Experiencia</a></li>
             <li><a href="#section5">Proyectos</a></li>
-            <li><a href="#section6">Contacto</a></li>
+            <li><a href="#section1">Contacto</a></li>
             <li>
               <label className="switch">
                 <input 

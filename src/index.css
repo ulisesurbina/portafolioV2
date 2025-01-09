@@ -751,6 +751,16 @@ input:checked + .slider:before {
 }
 
 
+@media (min-width: 1520px) {
+  .NavbarWeb {
+    padding: 0 5rem;
+  }
+  .NavbarText {
+    padding-right: 5rem;
+  }
+}
+
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .ContainerBanner {
     flex-direction: column;
@@ -852,6 +862,10 @@ input:checked + .slider:before {
     top: 87%;
     left: 30%;
   }
+  .ContainerBanner__info__data span {
+    line-height: 2.5rem;
+    justify-content: center;
+  }
 }
 
 @media(min-width: 300px) and (max-width: 767px) {
@@ -939,6 +953,7 @@ input:checked + .slider:before {
   }
   .ContainerBanner__info__data span {
     line-height: 2.5rem;
+    justify-content: center;
   }
   .ContainerBanner__info button {
     width: 95%;

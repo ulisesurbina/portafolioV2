@@ -1,5 +1,4 @@
 import "./index.css";
-import React, { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -51,7 +50,7 @@ function Openfinance() {
           760: {
             slidesPerView: 2,
           },
-          480: {
+          300: {
             slidesPerView: 1,
           },
         }}
