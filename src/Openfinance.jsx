@@ -45,7 +45,15 @@ function Openfinance() {
           slideShadows: false,
         }}
         pagination={{
-            clickable: true,
+          clickable: true,
+        }}
+        breakpoints={{
+          760: {
+            slidesPerView: 2,
+          },
+          480: {
+            slidesPerView: 1,
+          },
         }}
         modules={[Autoplay, Navigation, EffectCoverflow, Pagination]}
         className="mySwiperOpen">
