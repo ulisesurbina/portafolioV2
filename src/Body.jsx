@@ -87,7 +87,7 @@ function Body({ darkMode }) {
                       </span>
                       <span>
                         <img src={age_gray} alt="age" />
-                        <p>30 años</p>
+                        <p>31 años</p>
                       </span>
                       <span>
                         <img src={location_gray} alt="location" />
