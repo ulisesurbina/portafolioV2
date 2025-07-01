@@ -99,7 +99,7 @@ function Body({ darkMode }) {
                         <p>Tengo experiencia de 2 años y medio en desarrollo web Frontend, encargado del desarrollo, mantenimiento y actualización de páginas web colaborando con equipos de trabajo.</p>
                     </div>
                     <div className="InfoDetalleUser__section__skills__test">
-                        <h3>Ulises se destacó en su rol como desarrollador en finvero, desarrollando la página de Open Finance 2050, demostrando excelente dominio de liderazgo, trabajo en equipo y eficiencia. Su capacidad para implementar cambios rápidos y efectivos fue crucial para nuestro evento anual. Su experiencia en HTML5, CSS3, JavaScript y React, junto con su enfoque en el trabajo en equipo contribuyeron significativamente al éxito del proyecto. Altamente recomendado para roles de desarrollo frontend. <br /> - <a href="https://www.linkedin.com/in/viviana-azcona-40aa63183/" target='_blank'>Viviana Azcona</a>, Design & UX/UI Manager, finvero / Open Finance 2050
+                        <h3>Ulises se destacó en su rol como desarrollador en finvero, desarrollando la página de Open Finance 2050, demostrando excelente dominio de liderazgo, trabajo en equipo y eficiencia. Su capacidad para implementar cambios rápidos y efectivos fue crucial para nuestro evento anual. Su experiencia en HTML5, CSS3, JavaScript y React, junto con su enfoque en el trabajo en equipo contribuyeron significativamente al éxito del proyecto. Altamente recomendado para roles de desarrollo frontend. <br /> - <a href="https://www.linkedin.com/in/eduardo-benitez-gaspar-88a00b172/" target='_blank'>Eduardo Benitez Gaspar</a>, Head de Producto, finvero
                         </h3>
                     </div>
                 </div>
