@@ -160,6 +160,7 @@ input:checked + .slider:before {
 }
 .NavbarWeb img {
  padding: 0 3rem;
+ width: 8%;
 }
 .NavbarText {
   display: grid;
@@ -750,17 +751,6 @@ input:checked + .slider:before {
   height: 35vh;
 }
 
-
-@media (min-width: 1520px) {
-  .NavbarWeb {
-    padding: 0 5rem;
-  }
-  .NavbarText {
-    padding-right: 5rem;
-  }
-}
-
-
 @media (min-width: 768px) and (max-width: 1024px) {
   .ContainerBanner {
     flex-direction: column;
@@ -792,9 +782,6 @@ input:checked + .slider:before {
   .InfoDetalleUser__section__skills__experience p,
   .InfoDetalleUser__section__skills__test h3 {
     line-height: 1.5rem;
-  }
-  .NavbarWeb img {
-    width: 12%;
   }
   .ContainerBanner__info p span {
     line-height: 6rem;
@@ -876,6 +863,9 @@ input:checked + .slider:before {
     align-items: center;
     width: 80%;
   }
+  .BodyWeb {
+    margin-top: 8rem;
+  }
   .InfoDetalleUser__section {
     flex-direction: column-reverse;
   }
@@ -904,7 +894,7 @@ input:checked + .slider:before {
     line-height: 1.5rem;
   }
   .NavbarWeb img {
-    width: 12%;
+    width: 20%;
   }
   .ContainerBanner__info p span {
     line-height: 6rem;
@@ -991,7 +981,7 @@ input:checked + .slider:before {
   }
   .NavbarWeb {
     flex-wrap: wrap;
-    height: 15vh;
+    height: 10rem;
   }
   .BgGreenOne {
     width: 65%;

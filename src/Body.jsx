@@ -95,8 +95,8 @@ function Body({ darkMode }) {
                       </span>
                     </div>
                     <div className="InfoDetalleUser__section__skills__experience">
-                        <h2 className="flipX">+2</h2>
-                        <p>Tengo experiencia de 2 años y medio en desarrollo web Frontend, encargado del desarrollo, mantenimiento y actualización de páginas web colaborando con equipos de trabajo.</p>
+                        <h2 className="flipX">+3</h2>
+                        <p>Tengo experiencia de 3 años en desarrollo web Frontend, encargado del desarrollo, mantenimiento y actualización de páginas web colaborando con equipos de trabajo.</p>
                     </div>
                     <div className="InfoDetalleUser__section__skills__test">
                         <h3>Ulises se destacó en su rol como desarrollador en finvero, desarrollando la página de Open Finance 2050, demostrando excelente dominio de liderazgo, trabajo en equipo y eficiencia. Su capacidad para implementar cambios rápidos y efectivos fue crucial para nuestro evento anual. Su experiencia en HTML5, CSS3, JavaScript y React, junto con su enfoque en el trabajo en equipo contribuyeron significativamente al éxito del proyecto. Altamente recomendado para roles de desarrollo frontend. <br /> - <a href="https://www.linkedin.com/in/eduardo-benitez-gaspar-88a00b172/" target='_blank'>Eduardo Benitez Gaspar</a>, Head de Producto, finvero
@@ -268,7 +268,7 @@ function Body({ darkMode }) {
             <div className="Container__experiencia__grid__info">
               <div>
                 <h3>Finvero, CDMX</h3>
-                <p>Marzo 2023 - Actualidad</p>
+                <p>Marzo 2023 - Julio 2025</p>
               </div>
               <div>
                 <h3>Academlo, CDMX</h3>
@@ -283,7 +283,7 @@ function Body({ darkMode }) {
             <div className="Container__experiencia__grid__info">
               <div>
                 <h3>Desarrollador Web Frontend</h3>
-                <p>Actualmente desarrollo y mantengo páginas web responsive en React, HTML, CSS y JavaScript.</p>
+                <p>Desarrollo y mantenimiento de páginas web responsive en React, HTML, CSS y JavaScript.</p>
               </div>
               <div>
                 <h3>Bootcamp de programación</h3>
